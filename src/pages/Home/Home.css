@@ -1,0 +1,106 @@
+.hero{
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+
+.hero-caption{
+    position: absolute;
+    width: 100%;
+    padding-left: 4%;
+    bottom: 0;
+}
+
+.hero-caption h1{
+    max-width: 600px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.hero-caption p{
+    max-width: 700px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn img{
+    width: 25px;
+}
+
+.hero-btns .btn{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btns .btn.dark-btn{
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn: hover{
+    background: #6d6d6e66;
+}
+
+.more-cards{
+    padding-left: 4%;
+}
+
+.btn {
+    color: black;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* CSS untuk player overlay */
+.player-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

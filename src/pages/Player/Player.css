@@ -1,0 +1,99 @@
+/* src/components/Player/Player.css */
+
+.player-container {
+    position: relative;
+    background: black;
+    color: white;
+    width: 100vw; /* Atur menjadi penuh viewport */
+    height: 100vh; /* Atur menjadi penuh viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-frame {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan video mengisi area penuh */
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .player-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .play-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(to top, black, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #444;
+    cursor: pointer;
+  }
+  
+  .progress {
+    height: 100%;
+    background: red;
+    width: 0;
+  }
+  
+  .control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .control-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .volume-control input[type="range"] {
+    width: 80px;
+  }
+  
+  .button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+  }
