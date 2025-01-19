@@ -1,7 +1,6 @@
 # Netflix Clone Streaming Website
 
-![ReactJS](https://img.shields.io/badge/ReactJs-red?style=flat-square)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.0-blue?style=flat-square)
+![React](https://img.shields.io/badge/React.js-%5E18.0.0-blue?logo=react) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-%5E3.0-green?logo=tailwind-css) 
 
 This project is a Netflix-like streaming website built using React.js and Tailwind CSS, with data fetched from The Movie Database (TMDB) API. The website allows users to browse and search for movies and TV shows, view detailed information about each title, and stream trailers.
 
